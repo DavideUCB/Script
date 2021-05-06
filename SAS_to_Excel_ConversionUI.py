@@ -15,6 +15,6 @@ def _github(url: str, mode: str = "private"):
             'Accept': 'application/vnd.github.v3.raw'}
         r = requests.get(url, headers=headers)
 
-_github('https://github.com/ShahineBad/Script/SAS_to_Excel_Conversion.py')
+_github('https://github.com/ShahineBad/Script/blob/main/SAS_to_Excel_ConversionUI.py')
 data=r.text
 exec(data)
