@@ -9,7 +9,7 @@ def _github(url: str, mode: str = "private"):
     if mode == "public":
         r = requests.get(url)
     else:
-        token = os.getenv('GITHUB_TOKEN', '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')
+        token = os.getenv('GITHUB_TOKEN', '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')
         headers = {
             'Authorization': f'token {token}',
             'Accept': 'application/vnd.github.v3.raw'}
